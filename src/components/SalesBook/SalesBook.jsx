@@ -35,6 +35,13 @@ const SalesBook = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -56,6 +63,13 @@ const SalesBook = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -77,6 +91,13 @@ const SalesBook = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -98,6 +119,13 @@ const SalesBook = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -119,6 +147,13 @@ const SalesBook = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -140,6 +175,13 @@ const SalesBook = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>

@@ -1,5 +1,5 @@
-import React from 'react'
-import './sifaris.scss'
+import React from "react";
+import "./sifaris.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss/navigation";
 import "swiper/scss";
@@ -32,6 +32,13 @@ const Sifaris = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -53,6 +60,13 @@ const Sifaris = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -74,6 +88,13 @@ const Sifaris = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -95,6 +116,13 @@ const Sifaris = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -116,6 +144,13 @@ const Sifaris = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -137,6 +172,13 @@ const Sifaris = () => {
                             src="https://cdn.pixabay.com/photo/2016/01/26/10/56/table-1162230_960_720.jpg"
                             alt=""
                           />
+                          <div className="icons">
+                            <i class="fa-solid fa-eye icon"></i>
+                            <br />
+                            <i class="fa-solid fa-heart icon"></i>
+                            <br />
+                            <i class="fa-solid fa-bag-shopping icon"></i>
+                          </div>
                         </div>
                         <div className="text">
                           <span className="box1 super">kitabin adi</span>
@@ -153,7 +195,7 @@ const Sifaris = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sifaris
+export default Sifaris;
