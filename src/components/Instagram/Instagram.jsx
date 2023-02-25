@@ -12,7 +12,9 @@ const Instagram = () => {
           <h4>KİBRİT BOOK INSTAGRAMDA</h4>
         </div>
         <div className="follow">
-          <h5>Bizi Instagramda izləyin</h5>
+          <a href="https://www.instagram.com/kibriittbook" target="_blank">
+            <h5>Bizi Instagramda izləyin</h5>
+          </a>
         </div>
       </div>
     </div>
