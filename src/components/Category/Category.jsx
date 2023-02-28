@@ -1,31 +1,26 @@
 import React from "react";
-import "./yazarlar.scss";
+import "./category.scss";
 
-const Yazarlar = () => {
+const Category = () => {
   return (
     <div id="yazarlar">
-      <div className="container">
-        <div className="top">
-          <h2>Yazarlar</h2>
-        </div>
-      </div>
       <div className="bottom">
         <div className="d-flex">
-          <div className="col-lg-4 col-6 my-2">
+          <div className="col-lg-4 my-2 col-12">
             <div className="box">
               <div className="image">
                 <img
-                  src="https://cdn.pixabay.com/photo/2019/03/01/18/32/night-4028339_960_720.jpg"
+                  src="https://thumbs.dreamstime.com/b/fyodor-dostoyevsky-26656501.jpg"
                   alt=""
                 />
               </div>
               <div className="text">
-                <h4>Yazarin adi</h4>
+                <h4>Kateqoriya adi</h4>
                 <span>Bütün məhsullara baxın</span>
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-6 my-2">
+          <div className="col-lg-4 col-12 my-2">
             <div className="box">
               <div className="image">
                 <img
@@ -39,7 +34,7 @@ const Yazarlar = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-6 my-2">
+          <div className="col-lg-4 col-12 my-2">
             <div className="box">
               <div className="image">
                 <img
@@ -59,4 +54,4 @@ const Yazarlar = () => {
   );
 };
 
-export default Yazarlar;
+export default Category;

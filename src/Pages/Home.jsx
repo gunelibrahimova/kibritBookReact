@@ -10,14 +10,14 @@ import Sifaris from '../components/Sifaris/Sifaris'
 import Slider from '../components/Slider/Slider'
 import Stocks from '../components/Stocks/Stocks'
 import YayinEvi from '../components/YayinEvi/YayinEvi'
-import Yazarlar from '../components/Yazarlar/Yazarlar'
+import Category from '../components/Category/Category'
 
 const Home = () => {
   return (
     <div>
         {/* <Header/> */}
         <Slider/>
-        <Yazarlar />
+        <Category />
         <Publisher />
         <YayinEvi />
         <Language />
@@ -26,6 +26,7 @@ const Home = () => {
         <SalesBook />
         <Stocks />
         <Sifaris />
+        
         <Instagram />
     </div>
   )

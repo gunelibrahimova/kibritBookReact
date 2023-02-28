@@ -12,7 +12,7 @@ const KitabTurleri = () => {
       <div className="container">
         <div className="publish">
           <div className="yayin">
-            <div className="text">Kategoriler</div>
+            <div className="text">Yazarlar</div>
           </div>
           <div className="bottom">
             <Swiper

@@ -8,7 +8,9 @@ import { Navigation, Scrollbar, A11y } from "swiper";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { addToCart, fetchBook } from "../../redux/Reducer/cartReducer";
+import { addToCart, fetchBook } from "../../redux/Reducer/cartSlice";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SalesBook = () => {
 
@@ -19,6 +21,15 @@ const SalesBook = () => {
   useEffect(() => {
     dispatch(fetchBook())
   }, [])
+
+  
+
+  const notify = () =>
+    toast(
+      <Link to="/cart" style={{ textDecoration: "none" }}>
+        "Product added to cart !"
+      </Link>
+    );
 
   return (
     <div id="salesbook">
@@ -38,7 +49,7 @@ const SalesBook = () => {
               navigation
               scrollbar={{ draggable: false }}
             >
-              { data &&
+              {data &&
                 data.map((book) => (
                   <SwiperSlide key={book.id}>
                     <div className="containerr">
@@ -53,17 +64,22 @@ const SalesBook = () => {
                                 />
                               </Link>
                               <div className="icons">
-                                <i className="fa-solid fa-eye icon"></i>
+                                <Link to="/book">
+                                  <i className="fa-solid fa-eye icon"></i>
+                                </Link>
                                 <br />
                                 <i className="fa-solid fa-heart icon"></i>
                                 <br />
-                                <i className="fa-solid fa-bag-shopping icon"></i>
+                                <i className="fa-solid fa-bag-shopping icon" onClick={() => dispatch(addToCart(book))}></i>
                               </div>
                             </div>
                             <div className="text">
-                              <span className="box1 super">{book.title}</span>
-                              <span className="box1 number">{book.price}</span>
-                              <span className="sebet" onClick={() => dispatch(addToCart(book))}>Səbətə at</span>
+                              <span className="box1 super">{book.name}</span>
+                              <span className="box1 number">{book.price}₼</span>
+                              <span className="sebet" onClick={() => {
+                                dispatch(addToCart(book));
+                                notify()
+                              }}>Səbətə at</span>
                             </div>
                           </div>
                         </div>
@@ -76,8 +92,23 @@ const SalesBook = () => {
           </div>
         </div>
       </div>
+      <ToastContainer
+        limit={3}
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <ToastContainer />
     </div>
   );
 };
+
+
 
 export default SalesBook;

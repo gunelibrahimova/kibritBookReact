@@ -18,6 +18,13 @@
         }
         .price{
             font-weight: bold;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                color: #FBBC34;
+            }
+
         }
     }
 }

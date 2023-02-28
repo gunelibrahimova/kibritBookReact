@@ -10,8 +10,8 @@ const KitabSetleri = () => {
   return (
     <div id="kitabset">
       <div className="container">
-        <div className="liner">
-          <h4>KITAB SETLƏRİ</h4>
+        <div className="liner" data-aos="fade-down">
+          <h4 >KITAB SETLƏRİ</h4>
         </div>
         <div className="books">
           <div className="bottom">
