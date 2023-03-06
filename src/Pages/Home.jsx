@@ -26,7 +26,6 @@ const Home = () => {
         <SalesBook />
         <Stocks />
         <Sifaris />
-        
         <Instagram />
     </div>
   )

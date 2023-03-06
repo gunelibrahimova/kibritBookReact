@@ -13,7 +13,7 @@ import { signInUser, signUpUser } from '../../redux/Reducer/authSlice';
 
 const Auth = () => {
 
-  const [value, setValue] = useState('1');
+
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
@@ -21,20 +21,23 @@ const Auth = () => {
   const [emaill, setEmaill] = useState("");
   const [passwordd, setPasswordd] = useState("");
 
+  const [value, setValue] = useState('1');
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   const navigate = useNavigate()
   const dispatch = useDispatch()
+  
 
   const registerHandle = () => {
-    console.log(emaill, passwordd,fullName );
-    dispatch(signUpUser({fullName,emaill, passwordd}))
+    console.log(emaill, passwordd, fullName);
+    dispatch(signUpUser({ fullName, emaill, passwordd }))
   }
 
   const loginHandle = () => {
-    console.log(email, password );
-    dispatch(signInUser({email, password}))
+    console.log(email, password);
+    dispatch(signInUser({ email, password }))
   }
 
 
@@ -56,11 +59,11 @@ const Auth = () => {
               <TabPanel value="1">
                 <div className="inputBox">
                   <p>E-poçt</p>
-                  <input type="text" onChange={(e) => setEmail(e.target.value)}/>
+                  <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className="inputBox marginBottom">
                   <p>Şifrəniz</p>
-                  <input type="password" onChange={(e) => setPassword(e.target.value)}/>
+                  <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
                 </div>
                 <div className="buttonBox">
@@ -71,15 +74,15 @@ const Auth = () => {
               <TabPanel value="2">
                 <div className="inputBox">
                   <p>Ad</p>
-                  <input type="text" onChange={(e) => setFullName(e.target.value)}/>
+                  <input type="text" value={fullName} onChange={(e) => setFullName(e.target.value)} />
                 </div>
                 <div className="inputBox">
                   <p>E-poçt ünvanı</p>
-                  <input type="text" onChange={(e) => setEmaill(e.target.value)}/>
+                  <input type="text" value={emaill} onChange={(e) => setEmaill(e.target.value)} />
                 </div>
                 <div className="inputBox">
                   <p>Şifrə</p>
-                  <input type="password" onChange={(e) => setPasswordd(e.target.value)}/>
+                  <input type="password" value={passwordd} onChange={(e) => setPasswordd(e.target.value)} />
                 </div>
                 <div className="buttonBoxx">
                   <button onClick={registerHandle}>Qeydiyyatdan keç</button>

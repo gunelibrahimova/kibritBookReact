@@ -4,6 +4,7 @@ import BookDetail from '../components/BookDetail/BookDetail';
 import Cart from '../components/Cart/Cart';
 import Auth from '../components/Auth/Auth';
 import Home from '../Pages/Home';
+import AllBook from '../components/AllBook/AllBook';
 
 
 const MyRouter = () => {
@@ -13,6 +14,7 @@ const MyRouter = () => {
       <Route path='/book' element={<BookDetail />}/>
       <Route path='/cart' element={<Cart />}/>
       <Route path='/auth' element={<Auth />}/>
+      <Route path='/allbook' element={<AllBook />}/>
     </Routes>
   )
 }

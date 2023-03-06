@@ -29,13 +29,15 @@ const Header = () => {
                 <h5 style={{ color: "black" }}>Əsas Səhifə</h5>
               </Link>
               <img width={100} height="100" src={logo} alt="" />
-              <h5>Bütün məhsullar</h5>
+              <Link to="/allbook" style={{ textDecoration: "none", color:"black" }}>
+                <h5>Bütün məhsullar</h5>
+              </Link>
             </div>
           </div>
           <div className="col-lg-2">
             <div className="icon">
               <Link to="/auth">
-                <i class="fa-regular fa-user" style={{color: "black"}}></i>
+                <i class="fa-regular fa-user" style={{ color: "black" }}></i>
               </Link>
               <Link to="/cart" style={{ textDecoration: "none" }}>
                 <i class="fa-solid fa-cart-shopping car price"></i>
